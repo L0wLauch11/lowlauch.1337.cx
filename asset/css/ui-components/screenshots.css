@@ -14,8 +14,8 @@
 
 .screenshot-clicked {
     position: fixed;
-    height: 80%;
-    width: auto;
+    max-width: 90vmin;
+    max-height: 90vmin;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
