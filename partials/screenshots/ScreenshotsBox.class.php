@@ -33,7 +33,9 @@ class ScreenshotsBox {
         $this->screenshotsListIterator++;
     }
 
-    public function render() {
+    private function generateScreenshotsTable() {
+        $this->screenshotsList = [];
+
         foreach ($this->screenshots as $screenshotPath) {
             if (is_file($_SERVER['DOCUMENT_ROOT'].$screenshotPath)) {
                 $this->addScreenshotToList($screenshotPath);
@@ -48,8 +50,20 @@ class ScreenshotsBox {
             }
         }
 
+        return $this->screenshotsList;
+    }
+
+    public function render() {
+        $desktopList = $this->generateScreenshotsTable();
+
+        // Mobile list double the density
+        $this->maxScreenshotsPerRow /= 2;
+        $this->maxScreenshotsPerRow = ceil($this->maxScreenshotsPerRow);
+        $mobileList = $this->generateScreenshotsTable();
+
         $output = render_php(__DIR__.'/screenshots.php', [
-            'screenshots' => $this->screenshotsList,
+            'screenshots' => $desktopList,
+            'screenshotsMobile' => $mobileList,
             'maxScreenshotsPerRow' => $this->maxScreenshotsPerRow
         ]);
         return $output;
