@@ -2,6 +2,9 @@
 $site = new Site();
 $site->setName("IPFS Free Archive");
 $site->setReleaseDate('2022');
+
+$visit = new FooterVisitLink('https://archive.lowlauch.1337.cx', 'archive.lowlauch.1337.cx', 'red');
+$site->setFooterContent($visit->render());
 ?>
 
 <h2>Beschreibung</h2>
