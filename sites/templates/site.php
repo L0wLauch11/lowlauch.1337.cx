@@ -61,14 +61,14 @@ ob_end_clean();
 
     <div class="site-bar footer-bar container">
         <?= $site->getFooterContent(); ?>
-        
+
         <p class="credits-text">
             <span class="desktop-only">
-                <i>lowlauch, 2024</i> -> <a href="https://github.lol" target="_blank">source code</a>
+                <i>lowlauch, 2024</i> -> <a href="https://github.com/L0wLauch11/lowlauch.1337.cx" target="_blank">source code</a>
             </span>
 
             <span class="mobile-only">
-                <a class="button button-icon button-inline button-aqua" href="https://github.lol" target="_blank">
+                <a class="button button-icon button-inline button-aqua" href="https://github.com/L0wLauch11/lowlauch.1337.cx" target="_blank">
                     <img class="icon" src="/asset/img/icons/source.png" alt="">
                 </a>
             </span>

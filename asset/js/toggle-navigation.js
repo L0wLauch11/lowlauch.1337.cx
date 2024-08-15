@@ -8,7 +8,6 @@ function toggleNavigation() {
         navigation.style.display = 'block';
         navigation.style.opacity = '100%';
         document.documentElement.style.setProperty('--sidebar-width', navigationDefaultWidth);
-        
     } else {
         navigation.style.display = 'none';
         navigation.style.opacity = '0%';
