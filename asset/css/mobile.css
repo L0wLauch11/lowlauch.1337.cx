@@ -1,0 +1,39 @@
+@media only screen and (max-width: 800px) {
+    :root {
+        --site-bar-height: 48px;
+    }
+
+    .side-navigation {
+        display: none;
+        position: fixed;
+        width: calc(100vw - 8px);
+        margin-right: 4px;
+        height: calc(
+            100vh
+            - var(--container-margin) * 2
+            - var(--container-outline-width) * 2
+            - var(--site-bar-height)
+            - 2px
+        );
+    }
+
+    .container {
+        margin-left: 4px;
+    }
+
+    .button-show-navigation {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .footer-bar {
+        z-index: -10;
+    }
+}

@@ -1,0 +1,84 @@
+.button {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(30, 30, 30, 0.7);
+    outline: rgba(255, 255, 255, 0.2) solid 1px;
+    backdrop-filter: blur(16px);
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: " ";
+}
+
+.button-inline {
+    width: fit-content;
+    display: inline;
+    font-weight: normal;
+}
+
+.button-inline:hover {
+    color: white;
+}
+
+.button:hover {
+    box-shadow: inset 0 -8px 24px rgba(255, 255, 255, 0.1);
+    outline: rgba(255, 255, 255, 0.5) solid 1px;
+}
+
+/* Special navigation button */
+.button-show-navigation {
+    border: none;
+    border-radius: 8px;
+    margin-top: 0px;
+    color: white;
+    height: var(--site-bar-height);
+    width: var(--site-bar-height);
+    float: left;
+}
+
+.button-show-navigation img {
+    width: 100%;
+}
+
+/* Special colored buttons */
+.button-blue {
+    outline-color: rgba(30, 143, 255, 0.6);
+    background-color: rgba(30, 143, 255, 0.2);
+}
+
+.button-blue:hover {
+    outline-color: rgba(30, 143, 255, 1);
+    background-color: rgba(30, 143, 255, 0.3);
+    box-shadow: inset 0 -8px 24px rgba(114, 184, 255, 0.2);
+}
+
+.button-red {
+    outline-color: rgba(255, 30, 30, 0.6);
+    background-color: rgba(255, 30, 30, 0.2);
+}
+
+.button-red:hover {
+    outline-color: rgba(255, 30, 30, 1);
+    background-color: rgba(255, 30, 30, 0.3);
+    box-shadow: inset 0 -8px 24px rgba(114, 184, 255, 0.2);
+}
+
+.button-aqua {
+    outline-color: rgba(61, 242, 255, 0.6);
+    background-color: rgba(61, 242, 255, 0.2);
+}
+
+.button-aqua:hover {
+    outline-color: rgba(61, 242, 255, 1);
+    background-color: rgba(61, 242, 255, 0.3);
+    box-shadow: inset 0 -8px 24px rgba(114, 184, 255, 0.2);
+}
+
+/* Button containg icon */
+.button-icon {
+    height: 24px;
+    width: 24;
+}

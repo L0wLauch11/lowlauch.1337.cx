@@ -1,0 +1,11 @@
+.footer-bar {
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-left: calc(
+        var(--sidebar-width)
+        + var(--site-bar-height)
+        + var(--container-outline-width) * 2
+        + 8px
+        + 2px
+    );
+}

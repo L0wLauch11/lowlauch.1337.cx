@@ -1,0 +1,56 @@
+:root {
+    --sidebar-width: 400px;
+
+    --site-bar-height: 56px;
+
+    --container-outline-width: 1px;
+    --container-margin: 4px;
+    --container-padding-horizontal: 32px;
+    --container-padding-vertical: 16px;
+
+    --ui-font: RobotoSlab;
+}
+
+@font-face {
+    font-family: RobotoSlab;
+    src: url("/asset/font/RobotoSlab.ttf");
+}
+
+html {
+    background-image: url("/asset/img/background.jpg");
+    background-size: cover;
+    background-color: black;
+    color: white;
+    font-family: var(--ui-font);
+    min-height: 100%;
+    position: relative;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+.gray-text {
+    color: gray;
+}
+
+a {
+    color: deepskyblue;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.icon {
+    width: 24px;
+    vertical-align: middle;
+}

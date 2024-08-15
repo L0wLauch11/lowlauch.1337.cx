@@ -1,0 +1,17 @@
+.container {
+    margin: var(--container-margin);
+    margin-left: calc(var(--sidebar-width) + 8px);
+    padding: var(--container-padding-vertical) var(--container-padding-horizontal);
+    transition: 0.3s;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    outline: rgba(255, 255, 255, 0.2) solid var(--container-outline-width);
+    box-shadow: inset 0px -8px 48px rgba(0, 0, 0, 0.4);
+}
+
+.container:hover {
+    outline-color: rgba(255, 255, 255, 0.5);
+}
