@@ -28,18 +28,20 @@ ob_end_clean();
 
     <div class="container site-bar">
         <p>
-            <?php
-            $pathSplit = explode('/', $sitePath);
-            foreach ($pathSplit as $pathPart) {
-                // We only want to show the folder path; instead of showing the php filename we show $site->getName();
-                if (str_contains($pathPart, '.php')) {
-                    continue;
-                }
+            <span class="desktop-only">
+                <?php
+                $pathSplit = explode('/', $sitePath);
+                foreach ($pathSplit as $pathPart) {
+                    // We only want to show the folder path; instead of showing the php filename we show $site->getName();
+                    if (str_contains($pathPart, '.php')) {
+                        continue;
+                    }
 
-                $pathPartCapitalized = ucfirst($pathPart);
-                echo "$pathPartCapitalized <span class='gray-text'>&#11106; </span>";
-            }
-            ?>
+                    $pathPartCapitalized = ucfirst($pathPart);
+                    echo "$pathPartCapitalized <span class='gray-text'>&#11106; </span>";
+                }
+                ?>
+            </span>
 
             <strong><?= $site->getName(); ?></strong>
             <?php if ($site->getReleaseDate() != null): ?>
@@ -56,7 +58,7 @@ ob_end_clean();
     </main>
 
     <button class="button button-inline button-blue button-show-navigation container" onclick="toggleNavigation();">
-        <img src="/asset/img/icons/hamburger-menu.png" alt="">
+        <img id="toggle-navigation-image" src="/asset/img/icons/chevron-left.png" alt="">
     </button>
 
     <div class="site-bar footer-bar container">

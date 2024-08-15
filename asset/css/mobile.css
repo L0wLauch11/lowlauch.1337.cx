@@ -9,7 +9,7 @@
         width: calc(100vw - 8px);
         margin-right: 4px;
         height: calc(
-            100vh
+            100svh
             - var(--container-margin) * 2
             - var(--container-outline-width) * 2
             - var(--site-bar-height)

@@ -6,7 +6,7 @@
     /* This calculation somehow works even if --site-bar-height changes */
     /* A better solution would be preferable though... */
     height: calc(
-        100vh
+        100svh
         - var(--container-margin) * 3
         - var(--container-outline-width) * 4
         - var(--site-bar-height) * 2
@@ -39,7 +39,7 @@
     background-size: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 100svh;
     z-index: -100;
 }
 
