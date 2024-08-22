@@ -41,7 +41,8 @@ class ScreenshotsBox {
                 $this->addScreenshotToList($screenshotPath);
             } elseif (is_dir($_SERVER['DOCUMENT_ROOT'].$screenshotPath)) {
                 foreach (scandir($_SERVER['DOCUMENT_ROOT'].$screenshotPath) as $screenshotInSubfolder) {
-                    if ($screenshotInSubfolder == '.' || $screenshotInSubfolder == '..') {
+                    if ($screenshotInSubfolder == '.' || $screenshotInSubfolder == '..'
+                            || !is_file($_SERVER['DOCUMENT_ROOT'].$screenshotPath.$screenshotInSubfolder)) {
                         continue;
                     }
 
@@ -50,6 +51,7 @@ class ScreenshotsBox {
             }
         }
 
+        $this->screenshotsListIterator = 0;
         return $this->screenshotsList;
     }
 

@@ -26,5 +26,5 @@ $site->setName("Home");
 
 <h3>Diese Website</h3>
 <p>
-    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte wie diese Website dazugehören!
+    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte, wie diese Website dazugehören!
 </p>
