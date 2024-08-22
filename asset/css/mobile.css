@@ -5,7 +5,8 @@
 
     .side-navigation {
         display: none;
-        position: fixed;
+        position: absolute !important;
+        z-index: 10 !important;
         width: calc(100vw - 8px);
         margin-right: 4px;
         height: calc(
