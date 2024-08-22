@@ -8,6 +8,11 @@ $screenshotsBox->setScreenshots(['/asset/img/projects/oh-no/']);
 $screenshotsBox->setMaxScreenshotsPerRow(6); /* oh-no has phone screenshots */
 ?>
 
+<h2>Verwendete Technologien</h2>
+<?= Technology::render('gamemaker'); ?>
+<?= Technology::render('paint.net'); ?>
+<?= Technology::render('opennbs'); ?>
+
 <h2>Beschreibung</h2>
 
 <p>

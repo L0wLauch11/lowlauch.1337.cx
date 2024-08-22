@@ -11,6 +11,12 @@ $visit = new FooterVisitLink('https://lowlauch.itch.io/hznor', $site->getName() 
 $site->setFooterContent($visit->render());
 ?>
 
+<h2>Verwendete Technologien</h2>
+<?= Technology::render('gamemaker'); ?>
+<?= Technology::render('paint.net'); ?>
+<?= Technology::render('audacity'); ?>
+<?= Technology::render('ableton'); ?>
+
 <h2>Beschreibung</h2>
 
 <p>
