@@ -17,7 +17,7 @@ $site->setName("Home");
 </p>
 
 <p>
-    Heutzutage versuche ich mich auch an anderen Dingen, wie Website Entwicklung (du siehst es ja gerade hier!). Aber auch Desktop-Applikationen habe ich schon geschrieben! (mit dem
+    Heutzutage versuche ich mich auch an anderen Dingen, wie Website Entwicklung mit <?= faviconLink('https://laravel.com/', 'Laravel'); ?> oder <?= faviconLink('https://www.php.net/manual/de/intro-whatis.php', 'PHP'); ?> (du siehst es ja gerade hier!). Aber auch Desktop-Applikationen habe ich schon geschrieben! (mit dem
     <?= faviconLink('https://dotnet.microsoft.com/en-us/download/dotnet-framework', '.NET Framework'); ?>
     , oder auch
     <?= faviconLink('https://www.python.org/', 'Python'); ?> + <?= faviconLink('https://doc.qt.io/qtforpython-6/', 'QT'); ?>
@@ -26,5 +26,5 @@ $site->setName("Home");
 
 <h3>Diese Website</h3>
 <p>
-    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte, wie diese Website dazugehören!
+    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte, wie diese Website dazugehören! Wenn du technikaffin bist kannst du dir das Nerdige hinter dieser Website <a href="/sites/templates/site.php?site=%2Fsites%2Fprojects%2Fwebsites%2Flowlauch.php">hier durchlesen</a>! 
 </p>

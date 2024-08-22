@@ -10,7 +10,7 @@ $site->setFooterContent($visit->render());
 <h2>Beschreibung</h2>
 
 <p>
-    <a href="https://archive.lowlauch.1337.cx">https://archive.lowlauch.1337.cx</a> ist ein Archiv, welches unlimitierten Speicherplatz hat, indem es sich die Dienste von <a href="https://nft.storage/">https://nft.storage/</a> zu nutze macht. Bei größeren Dateien (> ~200MB) gibt es Probleme, dabei sie abzurufen. Deshalb nur für kleinere Dateien geeignet.
+    <a href="https://archive.lowlauch.1337.cx">https://archive.lowlauch.1337.cx</a> <span class="brief">ist ein Archiv, welches unlimitierten Speicherplatz hat, indem es sich die Dienste von</span> <a href="https://nft.storage/">https://nft.storage/</a> zu nutze macht. Bei größeren Dateien (> ~200MB) gibt es Probleme, dabei sie abzurufen. Deshalb nur für kleinere Dateien geeignet.
 </p>
 
 <p>

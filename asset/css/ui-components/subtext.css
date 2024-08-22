@@ -1,4 +1,6 @@
 .subtext {
     color: rgb(160, 160, 160);
     font-style: italic;
+    display: block;
+    margin-bottom: 8px;
 }
