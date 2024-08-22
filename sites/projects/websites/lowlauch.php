@@ -6,6 +6,11 @@ $site->setReleaseDate('2024');
 
 <div id="screenshot-obstruction-box" onclick="unfocusAllScreenshots()"></div>
 
+<h2>Verwendete Technologien</h2>
+<?= Technology::render('php'); ?>
+<?= Technology::render('css'); ?>
+<?= Technology::render('github'); ?>
+
 <h2>Beschreibung</h2>
 
 <p>

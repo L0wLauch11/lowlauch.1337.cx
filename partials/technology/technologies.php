@@ -10,3 +10,6 @@ Technology::add('godot', 'Godot', 'https://godotengine.org/', 'Game Engine');
 Technology::add('ableton', 'Ableton Live', 'https://www.ableton.com/de/live/', 'Music');
 Technology::add('opennbs', 'Open Noteblock Studio', 'https://opennbs.org/', 'Sound Effects');
 Technology::add('bosca', 'Bosca Ceoil', 'https://yurisizov.itch.io/boscaceoil-blue', 'Chiptune');
+Technology::add('php', 'PHP', 'https://www.php.net/manual/de/intro-whatis.php', 'Programming');
+Technology::add('css', 'CSS', 'https://developer.mozilla.org/en-US/docs/Web/CSS', 'Style');
+Technology::add('github', 'GitHub', 'https://github.com/', 'Source Control');
