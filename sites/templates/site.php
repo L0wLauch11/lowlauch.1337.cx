@@ -53,7 +53,7 @@ ob_end_clean();
     <div id="site-background"></div>
     <main>
         <div class="container site-content">
-            <?= render_php($_SERVER['DOCUMENT_ROOT']."/$sitePath"); /* Now we render the site contents */?>
+            <?= renderPhp($_SERVER['DOCUMENT_ROOT']."/$sitePath"); /* Now we render the site contents */?>
         </div>
     </main>
 

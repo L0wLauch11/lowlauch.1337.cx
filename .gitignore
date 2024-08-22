@@ -1,1 +1,5 @@
 .vscode/
+
+# Favicons get downloaded dynamically
+asset/img/icons/favicons/*
+!favicons/.gitkeep

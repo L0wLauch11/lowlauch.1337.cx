@@ -61,7 +61,7 @@ class ScreenshotsBox {
         $this->maxScreenshotsPerRow = ceil($this->maxScreenshotsPerRow);
         $mobileList = $this->generateScreenshotsTable();
 
-        $output = render_php(__DIR__.'/screenshots.php', [
+        $output = renderPhp(__DIR__.'/screenshots.php', [
             'screenshots' => $desktopList,
             'screenshotsMobile' => $mobileList,
             'maxScreenshotsPerRow' => $this->maxScreenshotsPerRow

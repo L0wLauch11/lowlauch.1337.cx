@@ -11,15 +11,17 @@ $screenshotsBox->setMaxScreenshotsPerRow(6); /* oh-no has phone screenshots */
 <h2>Beschreibung</h2>
 
 <p>
-    oh no! ist ein Spiel, welches ich 2018 erstellt habe. Das Spielprinzip ist eigentlich recht simpel. Man spielt einen Kreis und muss den Stacheln ausweichen. Weiters kann man Münzen einsammeln mit welchen man sich im Shop Designs kaufen kann.
+    oh no! <span class="brief">ist ein Mobile-Game, wo man einen Kreis von links nach rechts schupft, um so den Stacheln auszuweichen.</span> Das Spiel ist komplett mit einem Shop mit verschiedenen Skins/Designs und Highscore-System.
 </p>
 
+<h3>Entstehungsgeschichte</h3>
 <p>
-    Die erste Version des Spiels war nach ~3 Tagen Entwicklung fertig. Für das war das Projekt eigentlich relativ erfolgreich. 500+ Downloads im Play-Store ist schon eine ordentliche Zahl.
+    oh no! sollte ein kleines Nebenprojekt während meiner Schulzeit sein. Die erste Version des Spiels war deshalb nach rund 3 Tagen Entwicklung bereits fertig. Für so ein kleines Spiel war es relativ erfolgreich. Es muss nicht immer kompliziert sein, um gut zu sein. 500+ Downloads im Play-Store ist schon eine ordentliche Zahl.
 </p>
 
+<h3>Verfügbarkeit</h3>
 <p>
-    Nur verfügbar auf Android.
+    oh no! war verfügbar auf Android. Leider ist dieses Spiel jetzt ein Relikt der alten Zeit. Anfänglichs verlor ich nur meine Google Play-Schlüsseldatei (benötigt, um Updates für das Spiel hochzuladen). Später wurde auch mein Google Play Entwicklerkonto gekündigt, da ich mit den immer aktualisierten Richtlinien des Google Play Stores nicht mitgekommen bin. Google zog letztendlich den Stecker. Wenn man aber im Internet sucht, findet man sogenannte .apk-mirrors, welche das Spiel noch zum Download anbieten (wie zum Beispiel <?= faviconLink('https://apkpure.com/oh-no/me.lowlauch.ohno', 'hier'); ?>).
 </p>
 
 <h2>Screenshots</h2>

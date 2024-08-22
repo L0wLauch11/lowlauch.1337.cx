@@ -11,4 +11,6 @@
 <link rel="stylesheet" href="/asset/css/ui-components/navigation.css">
 <link rel="stylesheet" href="/asset/css/ui-components/footer.css">
 <link rel="stylesheet" href="/asset/css/ui-components/screenshots.css">
+<link rel="stylesheet" href="/asset/css/ui-components/technology.css">
+<link rel="stylesheet" href="/asset/css/ui-components/subtext.css">
 <link rel="stylesheet" href="/asset/css/mobile.css">

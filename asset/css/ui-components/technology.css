@@ -1,0 +1,16 @@
+.technology-category {
+    font-weight: normal;
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+}
+
+.technology {
+    padding: 4px 8px;
+    margin-bottom: 4px;
+    display: inline-block;
+    backdrop-filter: blur(16px);
+    background-color: rgba(48, 48, 48, 0.5);
+    box-shadow: 8px 0px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    outline: rgba(255, 255, 255, 0.2) solid 1px;
+}

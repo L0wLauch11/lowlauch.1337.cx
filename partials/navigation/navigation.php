@@ -16,8 +16,13 @@
                 $isCurrentClass = 'side-navigation-current';
             }
 
-            $siteContentStripped = strip_tags(html_remove_tag($siteContent, 'h2'));
-            echo "<li><a class='$isCurrentClass button' href='/sites/templates/site.php?site=$siteUrl'>$siteName <span class='site-brief'>&mdash; $siteContentStripped</span></a></li>";
+            if (preg_match('/<span class="brief">(.*?)<\/span>/s', $siteContent, $siteBrief)) {
+                $siteBrief = " ...{$siteBrief[0]}"; // &mdash; alternative
+            } else {
+                $siteBrief = '';
+            }
+
+            echo "<li><a class='$isCurrentClass button' href='/sites/templates/site.php?site=$siteUrl'>$siteName <span class='site-brief'>$siteBrief</span></a></li>";
         }
         ?>
 
@@ -43,7 +48,7 @@
 
                     $siteUrl = urlencode("$sectionUrl");
                     $siteName = $site->getName();
-                    $siteContent = render_php("$sectionPath");
+                    $siteContent = renderPhp("$sectionPath");
 
                     printSite($siteUrl, $siteName, $siteContent);
                 } else {
@@ -60,7 +65,7 @@
 
                         $siteUrl = urlencode("$sectionUrl/$file");
                         $siteName = $site->getName();
-                        $siteContent = render_php("$sectionPath/$file");
+                        $siteContent = renderPhp("$sectionPath/$file");
 
                         printSite($siteUrl, $siteName, $siteContent);
                     }
