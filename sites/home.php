@@ -4,11 +4,11 @@ $site = new Site();
 $site->setName("Home");
 ?>
 
-<h2>Einen gesegneten Tag wünsche ich dir!</h2>
+<h2>Hallo</h2>
 
 <h3>Über Mich</h3>
 <p>
-    Im Internet kennt man mich unter <strong>lowlauch</strong> und dies ist meine persönliche Website :D
+    Im Internet kennt man mich unter <strong>lowlauch</strong> und <span class="brief">dies ist meine persönliche Website</span> :D
 </p>
 
 <h3>Meine Erfahrung</h3>
