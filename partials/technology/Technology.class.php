@@ -16,9 +16,9 @@ class Technology {
         $this->category = $category;
     }
 
-    public static function add($identifier, $displayName, $link,  $icon = 'automatic') {
+    public static function add($identifier, $displayName, $link, $category, $icon = 'automatic') {
         self::$technologies[$identifier] = 
-            new Technology($identifier, $displayName, $link, $icon);
+            new Technology($identifier, $displayName, $link, $category, $icon);
     }
 
     public static function render($identifier) {
