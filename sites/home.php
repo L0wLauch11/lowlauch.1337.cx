@@ -21,10 +21,10 @@ $site->setName("Home");
     <?= faviconLink('https://dotnet.microsoft.com/en-us/download/dotnet-framework', '.NET Framework'); ?>
     , oder auch
     <?= faviconLink('https://www.python.org/', 'Python'); ?> + <?= faviconLink('https://doc.qt.io/qtforpython-6/', 'QT'); ?>
-    )
+    ) Bestimmt habe ich einige Dinge auch vergessen aufzuzählen :3
 </p>
 
 <h3>Diese Website</h3>
 <p>
-    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte, wie diese Website dazugehören! Wenn du technikaffin bist kannst du dir das Nerdige hinter dieser Website <a href="/sites/templates/site.php?site=%2Fsites%2Fprojects%2Fwebsites%2Flowlauch.php">hier durchlesen</a>! 
+    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte, wie diese Website dazugehören! Wenn du technikaffin bist kannst du dir das Nerdige hinter dieser Website <a href="?site=%2Fsites%2Fprojects%2Fwebsites%2Flowlauch.php">hier durchlesen</a>! 
 </p>

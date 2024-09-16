@@ -13,3 +13,6 @@ Technology::add('bosca', 'Bosca Ceoil', 'https://yurisizov.itch.io/boscaceoil-bl
 Technology::add('php', 'PHP', 'https://www.php.net/manual/de/intro-whatis.php', 'Programming');
 Technology::add('css', 'CSS', 'https://developer.mozilla.org/en-US/docs/Web/CSS', 'Style');
 Technology::add('github', 'GitHub', 'https://github.com/', 'Source Control');
+Technology::add('mysql', 'MySQL', 'https://www.mysql.com/de/', 'Database');
+Technology::add('java', 'Java', 'https://www.java.com/de/', 'Programming');
+Technology::add('spigot', 'SpigotMC', 'https://www.spigotmc.org/', 'Minecraft Plugins');

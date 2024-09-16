@@ -14,6 +14,7 @@ header {
     outline: rgba(255, 255, 255, 0.2) solid 1px;
     height: calc(100svh - 8px);
     transition: 0.3s;
+    overflow-y: scroll;
 }
 
 .side-navigation:hover {

@@ -11,6 +11,8 @@ include_once 'partials/screenshots/ScreenshotsBox.class.php';
 include_once 'partials/footer/FooterVisitLink.class.php';
 include_once 'partials/technology/Technology.class.php';
 include_once 'partials/technology/technologies.php';
+include_once 'partials/computer/ComputerComponent.class.php';
+include_once 'partials/computer/Computer.class.php';
 include_once 'partials/favicon-link.php';
 
 function renderPhp($pathToPhpFile, $passedVariables = []) {

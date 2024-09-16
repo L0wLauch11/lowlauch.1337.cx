@@ -4,9 +4,10 @@
         include_once 'NavigationSection.class.php';
 
         $sections = [
-            new NavigationSection('/sites/home.php', 'Home'),
+            new NavigationSection('/sites/home.php', 'Über Mich'),
             new NavigationSection('/sites/projects/games', 'Games'),
             new NavigationSection('/sites/projects/websites', 'Websites'),
+            new NavigationSection('/sites/projects/computers', 'Computer'),
             //new NavigationSection('/sites/projects/minecraft', 'Minecraft related'),
         ];
 
@@ -17,7 +18,8 @@
             }
 
             if (preg_match('/<span class="brief">(.*?)<\/span>/s', $siteContent, $siteBrief)) {
-                $siteBrief = " ...{$siteBrief[0]}"; // &mdash; alternative
+                $siteBriefStripped = strip_tags($siteBrief[0]);
+                $siteBrief = " ...{$siteBriefStripped}"; // &mdash; alternative
             } else {
                 $siteBrief = '';
             }

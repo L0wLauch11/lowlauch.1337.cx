@@ -1,6 +1,6 @@
 <?php
 $site = new Site();
-$site->setName("Lowlauch");
+$site->setName('Lowlauch');
 $site->setReleaseDate('2024');
 ?>
 
@@ -40,7 +40,7 @@ $site->setReleaseDate('2024');
     PHP (vor allem > Version 8.0) ist meiner Meinung nach die perfekte Programmiersprache für solch kleine Websites. Die Seite ist nicht allzu komplex, aber auch nicht extrem simple, wo vanilla HTML auch gereicht hätte. Ich mache mir die <strong>objektorientierten Features</strong> von PHP gut zunutze und kann so das meiste an schwierigem Code hinter Abstraktionen verstecken:
     
     <p></p><img src="/asset/img/projects/lowlauch/oop.png" class="screenshot" onclick="clickScreenshot(this)">
-    <span class="subtext">Boilerplate darf bei OOP natürlich nicht fehlen...</span>
+    <span class="subtext"><?= faviconLink("https://en.wikipedia.org/wiki/Boilerplate_code", "Boilerplate"); ?> darf bei OOP natürlich nicht fehlen...</span>
 
     <p>
         Ich habe auch überlegt HUGO anstatt PHP zu verwenden, aber dieser Static Site Generator hat mir nicht so gut gefallen wie PHP.
