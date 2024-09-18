@@ -15,7 +15,7 @@ $screenshotsBox->setScreenshots(['/asset/img/computers/lowlauch/'])
 <h2>Komponente</h2>
 <?= (new Computer(
     new ComputerComponent('AMD Radeon RX 6700 XT', 'XFX', 'https://www.techpowerup.com/gpu-specs/radeon-rx-6700-xt.c3695', 'Speedster SWFT 309'),
-    new ComputerComponent('i5 12600KF', 'Intel', 'https://www.techpowerup.com/cpu-specs/core-i5-12600kf.c2510'),
+    new ComputerComponent('Core i5 12600KF', 'Intel', 'https://www.techpowerup.com/cpu-specs/core-i5-12600kf.c2510'),
     new ComputerComponent('Aegis', 'G.Skill', 'https://geizhals.at/g-skill-aegis-dimm-kit-16gb-f4-3200c16d-16gis-a2151626.html', '2x 16GB DDR4 3200MT/s'),
     new ComputerComponent('Pure Base 500', 'be quiet!', 'https://geizhals.at/be-quiet-pure-base-500-weiss-bg035-a2126910.html'),
     new ComputerComponent('970 EVO Plus 2TB', 'Samsung', 'https://geizhals.at/samsung-ssd-970-evo-plus-2tb-mz-v7s2t0bw-a1972736.html'),

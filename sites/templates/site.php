@@ -58,7 +58,8 @@ ob_end_clean();
     </main>
 
     <button class="button button-inline button-blue button-show-navigation container" onclick="toggleNavigation();">
-        <img id="toggle-navigation-image" src="/asset/img/icons/chevron-left.png" alt="">
+        <img class="desktop-only" id="toggle-navigation-image" src="/asset/img/icons/chevron-left.png" alt="">
+        <img class="mobile-only" src="/asset/img/icons/hamburger-menu.png" alt="">
     </button>
 
     <div class="site-bar footer-bar container">
