@@ -8,7 +8,6 @@
             new NavigationSection('/sites/projects/games', 'Games'),
             new NavigationSection('/sites/projects/websites', 'Websites'),
             new NavigationSection('/sites/projects/computers', 'Computer'),
-            //new NavigationSection('/sites/projects/minecraft', 'Minecraft related'),
         ];
 
         function printSite($siteUrl, $siteName, $siteContent) {
@@ -29,7 +28,7 @@
         ?>
 
         <?php foreach ($sections as $section): ?>
-            <li class="side-navigation-subheading">&#11208; <?= $section->getDisplayName() ?></li> <?php /* &#11206; for down arrow */ ?>
+            <li class="side-navigation-subheading">&#11208; <?= $section->getDisplayName(); ?></li> <?php /* &#11206; for down arrow */ ?>
 
             <ul class="side-navigation-sublist">
                 <?php

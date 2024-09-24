@@ -58,3 +58,8 @@ a:hover {
 h3 {
     margin-bottom: -0.9em;
 }
+
+iframe {
+    width: 100%;
+    height: 80svh;
+}
