@@ -1,11 +1,11 @@
 <?php
 
 class ScreenshotsBox {
-    public $screenshots;
-    public $maxScreenshotsPerRow = 3;
-    private $screenshotsList = [];
-    private $screenshotsListRow = 0;
-    private $screenshotsListIterator = 0;
+    public array $screenshots;
+    public int $maxScreenshotsPerRow = 3;
+    private array $screenshotsList = [];
+    private int $screenshotsListRow = 0;
+    private int $screenshotsListIterator = 0;
 
     public function setScreenshots($screenshots) {
         $this->screenshots = $screenshots;
@@ -15,11 +15,11 @@ class ScreenshotsBox {
         return $this->screenshots;
     }
 
-    public function setMaxScreenshotsPerRow($maxScreenshotsPerRow) {
+    public function setMaxScreenshotsPerRow($maxScreenshotsPerRow): void {
         $this->maxScreenshotsPerRow = $maxScreenshotsPerRow;
     }
 
-    private function addScreenshotToList($screenshotPath) {
+    private function addScreenshotToList($screenshotPath): void {
         if ($this->screenshotsListIterator >= $this->maxScreenshotsPerRow) {
             $this->screenshotsListRow++;
             $this->screenshotsListIterator = 0;
@@ -33,7 +33,7 @@ class ScreenshotsBox {
         $this->screenshotsListIterator++;
     }
 
-    private function generateScreenshotsTable() {
+    private function generateScreenshotsTable(): array {
         $this->screenshotsList = [];
 
         foreach ($this->screenshots as $screenshotPath) {
@@ -55,7 +55,7 @@ class ScreenshotsBox {
         return $this->screenshotsList;
     }
 
-    public function render() {
+    public function render(): string {
         $desktopList = $this->generateScreenshotsTable();
 
         // Mobile list double the density

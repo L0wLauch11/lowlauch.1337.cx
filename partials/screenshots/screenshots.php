@@ -1,30 +1,26 @@
-<?php /* $screenshots coming from 'ScreenshotsBox.class.php' */ ?>
+<?php /* $screenshots/$screenshotsMobile coming from 'ScreenshotsBox.class.php' */ ?>
 
 <div id="screenshot-obstruction-box" onclick="unfocusAllScreenshots()"></div>
 
 <div class="screenshots-box">
-    <table class="desktop-only">
-        <?php foreach ($screenshots as $screenshotRow): ?>
-            <tr>
-                <?php foreach ($screenshotRow as $screenshot): ?>
-                    <td>
-                        <img class="screenshot" onclick="clickScreenshot(this)" src="<?= $screenshot ?>" alt="">
-                    </td>
-                <?php endforeach; ?>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+    <?php
+    $screenshotsTables = [
+        'desktop-only' => $screenshots,
+        'mobile-only' => $screenshotsMobile,
+    ];
+    ?>
 
-    <!-- Screenshots have half the density on mobile -->
-    <table class="mobile-only">
-        <?php foreach ($screenshotsMobile as $screenshotRow): ?>
-            <tr>
-                <?php foreach ($screenshotRow as $screenshot): ?>
-                    <td>
-                        <img class="screenshot" onclick="clickScreenshot(this)" src="<?= $screenshot ?>" alt="">
-                    </td>
-                <?php endforeach; ?>
-            </tr>
-        <?php endforeach; ?>
-    </table>
+    <?php foreach ($screenshotsTables as $key => $screenshotTable): ?>
+        <table class="<?= $key; ?>">
+            <?php foreach ($screenshotTable as $screenshotRow): ?>
+                <tr>
+                    <?php foreach ($screenshotRow as $screenshot): ?>
+                        <td>
+                            <img class="screenshot" onclick="clickScreenshot(this)" src="<?= $screenshot ?>" alt="">
+                        </td>
+                    <?php endforeach; ?>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+    <?php endforeach; ?>
 </div>

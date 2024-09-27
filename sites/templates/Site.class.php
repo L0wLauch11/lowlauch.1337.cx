@@ -1,39 +1,30 @@
 <?php
 class Site {
-    public $name;
-    public $screenshotsFolder;
-    public $releaseDate;
-    public $footerContent;
+    public string $name;
+    public string $releaseDate;
+    public string $footerContent;
 
-    public function getName() {
+    public function getName(): string {
         return $this->name;
     }
 
-    public function setName($name) {
+    public function setName($name): void {
         $this->name = $name;
     }
 
-    public function getScreenshotsFolder() {
-        return $this->screenshotsFolder;
-    }
-
-    public function setScreenshotsFolder($screenshotsFolder) {
-        $this->screenshotsFolder = $screenshotsFolder;
-    }
-
-    public function getReleaseDate() {
+    public function getReleaseDate(): string {
         return $this->releaseDate;
     }
 
-    public function setReleaseDate($releaseDate) {
+    public function setReleaseDate($releaseDate): void {
         $this->releaseDate = $releaseDate;
     }
 
-    public function getFooterContent() {
+    public function getFooterContent(): string {
         return $this->footerContent;
     }
 
-    public function setFooterContent($footerContent) {
+    public function setFooterContent($footerContent): void {
         $this->footerContent = $footerContent;
     }
 }

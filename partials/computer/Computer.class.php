@@ -1,15 +1,22 @@
 <?php
 
 class Computer {
-    public $gpu;
-    public $cpu;
-    public $ram;
-    public $case;
-    public $storage;
-    public $psu;
-    public $mainboard;
+    public ?ComputerComponent $gpu;
+    public ?ComputerComponent $cpu;
+    public ?ComputerComponent $ram;
+    public ?ComputerComponent $case;
+    public ?ComputerComponent $storage;
+    public ?ComputerComponent $psu;
+    public ?ComputerComponent $mainboard;
 
-    public function __construct($gpu = null, $cpu = null, $ram = null, $case = null, $storage = null, $psu = null, $mainboard = null) {
+    public function __construct(
+            ?ComputerComponent $gpu,
+            ?ComputerComponent $cpu,
+            ?ComputerComponent $ram,
+            ?ComputerComponent $case,
+            ?ComputerComponent $storage,
+            ?ComputerComponent $psu,
+            ?ComputerComponent $mainboard) {
         $this->gpu = $gpu;
         $this->cpu = $cpu;
         $this->ram = $ram;
@@ -19,71 +26,71 @@ class Computer {
         $this->mainboard = $mainboard;
     }
 
-    public function setGpu($gpu) {
+    public function setGpu($gpu): static {
         $this->gpu = $gpu;
         return $this;
     }
 
-    public function getGpu() {
+    public function getGpu(): ComputerComponent {
         return $this->gpu;
     }
 
 
-    public function setCpu($cpu) {
+    public function setCpu($cpu): static {
         $this->cpu = $cpu;
         return $this;
     }
 
-    public function getCpu() {
+    public function getCpu(): ComputerComponent {
         return $this->cpu;
     }
 
-    public function setRam($ram) {
+    public function setRam($ram): static {
         $this->ram = $ram;
         return $this;
     }
 
-    public function getRam() {
+    public function getRam(): ComputerComponent {
         return $this->ram;
     }
 
-    public function setCase($case) {
+    public function setCase($case): static {
         $this->case = $case;
         return $this;
     }
 
-    public function getCase() {
+    public function getCase(): ComputerComponent {
         return $this->case;
     }
 
-    public function setStorage($storage) {
+    public function setStorage($storage): static {
         $this->storage = $storage;
         return $this;
     }
 
-    public function getStorage() {
+    public function getStorage(): ComputerComponent {
         return $this->storage;
     }
 
-    public function setPsu($psu) {
+    public function setPsu($psu): static {
         $this->psu = $psu;
         return $this;
     }
 
-    public function getPsu() {
+    public function getPsu(): ComputerComponent {
         return $this->psu;
     }
 
-    public function setMainboard($mainboard) {
+    public function setMainboard($mainboard): static {
         $this->mainboard = $mainboard;
         return $this;
     }
 
-    public function getMainboard() {
+    public function getMainboard(): ComputerComponent {
         return $this->mainboard;
     }
 
-    public function renderComputerComponents() {
+    public function renderComputerComponents(): string {
         $components = [
             'Mainboard' => $this->mainboard,
             'CPU' => $this->cpu,

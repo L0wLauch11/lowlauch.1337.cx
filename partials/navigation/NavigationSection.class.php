@@ -1,19 +1,19 @@
 <?php
 
 class NavigationSection {
-    public $url;
-    public $displayName;
+    public string $url;
+    public string $displayName;
 
     public function __construct($url, $displayName) {
         $this->url = $url;
         $this->displayName = $displayName;
     }
 
-    public function getDisplayName() {
+    public function getDisplayName(): string {
         return $this->displayName;
     }
 
-    public function getUrl() {
+    public function getUrl(): string {
         return $this->url;
     }
 }

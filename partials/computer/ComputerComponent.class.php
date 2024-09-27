@@ -1,10 +1,10 @@
 <?php
 
 class ComputerComponent {
-    public $name;
-    public $brand;
-    public $link;
-    public $prefix;
+    public string $name;
+    public string $brand;
+    public string $link;
+    public string $prefix;
 
     public function __construct($name, $brand, $link, $prefix = '') {
         $this->name = $name;
@@ -13,19 +13,19 @@ class ComputerComponent {
         $this->prefix = $prefix;
     }
 
-    public function getName() {
+    public function getName(): string {
         return $this->name;
     }
 
-    public function getBrand() {
+    public function getBrand(): string {
         return $this->brand;
     }
 
-    public function getLink() {
+    public function getLink(): string {
         return $this->link;
     }
 
-    public function getPrefix() {
+    public function getPrefix(): string {
         return $this->prefix;
     }
 }

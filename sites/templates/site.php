@@ -17,8 +17,8 @@ ob_end_clean();
 ?>
 
 <head>
-    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/partials/metadata.php'; ?>
-    <title><?= Globals::$title; ?> - <?= $site->getName(); ?></title>
+    <?php include_once $_SERVER['DOCUMENT_ROOT'].'/partials/site-metadata.php'; ?>
+    <title><?= Env::WEBSITE_TITLE; ?> - <?= $site->getName(); ?></title>
 </head>
 
 <body>
