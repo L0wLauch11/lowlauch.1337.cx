@@ -1,8 +1,8 @@
 <?php
 class Site {
     public string $name;
-    public string $releaseDate;
-    public string $footerContent;
+    public ?string $releaseDate = null;
+    public ?string $footerContent = null;
 
     public function getName(): string {
         return $this->name;
@@ -12,19 +12,19 @@ class Site {
         $this->name = $name;
     }
 
-    public function getReleaseDate(): string {
+    public function getReleaseDate(): ?string {
         return $this->releaseDate;
     }
 
-    public function setReleaseDate($releaseDate): void {
+    public function setReleaseDate(?string $releaseDate): void {
         $this->releaseDate = $releaseDate;
     }
 
-    public function getFooterContent(): string {
+    public function getFooterContent(): ?string {
         return $this->footerContent;
     }
 
-    public function setFooterContent($footerContent): void {
+    public function setFooterContent(?string $footerContent): void {
         $this->footerContent = $footerContent;
     }
 }
