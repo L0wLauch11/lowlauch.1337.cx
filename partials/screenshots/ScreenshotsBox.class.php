@@ -59,8 +59,7 @@ class ScreenshotsBox {
         $desktopList = $this->generateScreenshotsTable();
 
         // Mobile list double the density
-        $this->maxScreenshotsPerRow /= 2;
-        $this->maxScreenshotsPerRow = ceil($this->maxScreenshotsPerRow);
+        $this->maxScreenshotsPerRow = ceil($this->maxScreenshotsPerRow * 0.5);
         $mobileList = $this->generateScreenshotsTable();
 
         $output = renderPhp(__DIR__.'/screenshots.php', [

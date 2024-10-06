@@ -1,7 +1,6 @@
 <?php
-
 $site = new Site();
-$site->setName("Home");
+$site->setName('Home');
 ?>
 
 <h2>Hallo</h2>

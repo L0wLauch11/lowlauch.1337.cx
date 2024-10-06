@@ -4,15 +4,15 @@
         include_once 'NavigationSection.class.php';
 
         $sections = [
-            new NavigationSection('/sites/home.php', 'Über Mich'),
-            new NavigationSection('/sites/projects/games', 'Games'),
-            new NavigationSection('/sites/projects/websites', 'Websites'),
-            new NavigationSection('/sites/projects/computers', 'Computer'),
+            new NavigationSection('', '/sites/home.php', 'Über Mich'),
+            new NavigationSection('/game', '/sites/projects/games', 'Games'),
+            new NavigationSection('/website', '/sites/projects/websites', 'Websites'),
+            new NavigationSection('/computer', '/sites/projects/computers', 'Computer'),
         ];
 
-        function printSite($siteUrl, $siteName, $siteContent) {
+        function printSite($siteRoute, $siteUrl, $siteName, $siteContent) {
             $isCurrentClass = '';
-            if (isset($_GET['site']) && urldecode($siteUrl) == $_GET['site']) {
+            if (isset($sitePath) && $sitePath == $siteUrl) {
                 $isCurrentClass = 'side-navigation-current';
             }
 
@@ -23,7 +23,18 @@
                 $siteBrief = '';
             }
 
-            echo "<li><a class='$isCurrentClass button' href='/sites/templates/site.php?site=$siteUrl'>$siteName <span class='site-brief'>$siteBrief</span></a></li>";
+            $siteBasename = explode(
+                '.php', 
+                basename(urldecode($siteUrl))
+            )[0];
+
+            echo <<<HTML
+                <li>
+                    <a class="$isCurrentClass button" href="$siteRoute/$siteBasename">
+                        $siteName <span class="site-brief">$siteBrief</span>
+                    </a>
+                </li>
+            HTML;
         }
         ?>
 
@@ -33,9 +44,7 @@
             <ul class="side-navigation-sublist">
                 <?php
                 // Maybe this logic should be broken out into its own file ...
-
-                $sectionUrl = $section->getUrl();
-                $sectionPath = $_SERVER['DOCUMENT_ROOT']."/$sectionUrl";
+                $sectionPath = "{$_SERVER['DOCUMENT_ROOT']}/{$section->getPath()}";
 
                 if (isset($site)) {
                     $sitePrevious = $site;
@@ -47,11 +56,11 @@
                     include $sectionPath;
                     ob_end_clean();
 
-                    $siteUrl = urlencode("$sectionUrl");
+                    $siteUrl = urlencode($sectionPath);
                     $siteName = $site->getName();
-                    $siteContent = renderPhp("$sectionPath");
+                    $siteContent = renderPhp($sectionPath);
 
-                    printSite($siteUrl, $siteName, $siteContent);
+                    printSite($section->getRoute(), $siteUrl, $siteName, $siteContent);
                 } else {
                     // For a navigationsection containing a directory
                     foreach (scandir($sectionPath) as $file) {
@@ -64,11 +73,11 @@
                         include "$sectionPath/$file";
                         ob_end_clean();
 
-                        $siteUrl = urlencode("$sectionUrl/$file");
+                        $siteUrl = urlencode("$sectionPath/$file");
                         $siteName = $site->getName();
                         $siteContent = renderPhp("$sectionPath/$file");
 
-                        printSite($siteUrl, $siteName, $siteContent);
+                        printSite($section->getRoute(), $siteUrl, $siteName, $siteContent);
                     }
                 }
                 

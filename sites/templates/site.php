@@ -4,15 +4,25 @@
 <?php require_once $_SERVER['DOCUMENT_ROOT'].'/setup.php'; ?>
 
 <?php
-if (isset($_GET['site'])) {
-    $sitePath = $_GET['site'];
-} else {
-    $sitePath = "/404.php";
+if (!isset($sitePath)) {
+    $sitePath = '404.php';
+}
+
+$sitePath = urldecode($sitePath);
+$sitePathFull = "{$_SERVER['DOCUMENT_ROOT']}/sites/$siteFolder{$sitePath}.php";
+
+if (Env::TESTING) {
+    print $sitePathFull;
+}
+
+if (!file_exists($sitePathFull)) {
+    $sitePath = '404.php';
+    $sitePathFull = "{$_SERVER['DOCUMENT_ROOT']}/sites/$siteFolder{$sitePath}.php";
 }
 
 // We do not want the site content, only other properties found in 'Site.class.php'
 ob_start();
-include $_SERVER['DOCUMENT_ROOT'].$sitePath;
+include $sitePathFull;
 ob_end_clean();
 ?>
 
@@ -30,7 +40,8 @@ ob_end_clean();
         <p>
             <span class="desktop-only">
                 <?php
-                $pathSplit = explode('/', $sitePath);
+                $siteFolderLastSlashRemoved = substr_replace($siteFolder, '', -1);
+                $pathSplit = explode('/', $siteFolderLastSlashRemoved);
                 foreach ($pathSplit as $pathPart) {
                     // We only want to show the folder path; instead of showing the php filename we show $site->getName();
                     if (str_contains($pathPart, '.php')) {
@@ -47,13 +58,15 @@ ob_end_clean();
             <?php if ($site->getReleaseDate() != null): ?>
                 (<?= $site->getReleaseDate(); ?>)
             <?php endif; ?>
+            
+            <?= Env::TESTING ? " | $sitePath" : ''; ?>
         </p>
     </div>
 
     <div id="site-background"></div>
     <main>
         <div class="container site-content">
-            <?= renderPhp($_SERVER['DOCUMENT_ROOT']."/$sitePath"); /* Now we render the site contents */?>
+            <?= renderPhp($sitePathFull); /* Now we render the site contents */?>
         </div>
     </main>
 
