@@ -4,7 +4,7 @@ require_once __DIR__.'/router.php';
 include_once __DIR__.'/setup.php';
 
 $siteRoutes = [
-    '/$sitePath' => '', /* Home */
+    '/$sitePath' => '', /* Wildcard sites */
     '/game/$sitePath' => 'projects/games/',
     '/website/$sitePath' => 'projects/websites/',
     '/computer/$sitePath' => 'projects/computers/',
@@ -12,7 +12,7 @@ $siteRoutes = [
 
 foreach ($siteRoutes as $siteRoute => $siteRouteFolder) {
     get($siteRoute, function($sitePath) {
-        global $siteRouteFolder;
+        global $siteRouteFolder; // Maybe there's a better way to pass $siteRouteFolder to this function
         $siteFolder = $siteRouteFolder;
         include_once 'sites/templates/site.php';
     });

@@ -25,5 +25,5 @@ $site->setName('Home');
 
 <h3>Diese Website</h3>
 <p>
-    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte, wie diese Website dazugehören! Wenn du technikaffin bist kannst du dir das Nerdige hinter dieser Website <a href="?site=%2Fsites%2Fprojects%2Fwebsites%2Flowlauch.php">hier durchlesen</a>! 
+    Hier kannst du genaueres über meine Werke erfahren. Größtenteils habe ich in meiner Freizeit Spiele entwickelt, wobei auch andere Projekte, wie diese Website dazugehören! Wenn du technikaffin bist kannst du dir das Nerdige hinter dieser Website <a href="/website/lowlauch">hier durchlesen</a>! 
 </p>

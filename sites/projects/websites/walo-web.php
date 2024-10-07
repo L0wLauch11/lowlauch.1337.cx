@@ -22,7 +22,7 @@ $screenshotsBox->setMaxScreenshotsPerRow(3);
 
 <h2>Beschreibung</h2>
 <p>
-    <span class="brief">Komplimentär zum <a href="?site=%2Fsites%2Fprojects%2Fgames%2Fwalo-mc.php">Minecraft-Walo-Plugin</a> gibt es auch die Walo-Website. Sie verbindet das Minecraft Plugin mit Datenbanken und Leaderboards. Außerdem bietet sie eine Dokumentation darüber an, wie man seinen eigenen Minecraft-Walo Spielmodus machen kann.</span>
+    <span class="brief">Komplimentär zum <a href="/game/walo-mc">Minecraft-Walo-Plugin</a> gibt es auch die Walo-Website. Sie verbindet das Minecraft Plugin mit Datenbanken und Leaderboards. Außerdem bietet sie eine Dokumentation darüber an, wie man seinen eigenen Minecraft-Walo Spielmodus machen kann.</span>
 </p>
 
 <h2>Screenshot</h2>
