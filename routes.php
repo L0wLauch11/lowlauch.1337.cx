@@ -1,6 +1,6 @@
 <?php
 
-require_once __DIR__.'/router.php';
+require_once __DIR__.'/Router.class.php';
 include_once __DIR__.'/setup.php';
 
 $siteRoutes = [
@@ -11,16 +11,16 @@ $siteRoutes = [
 ];
 
 foreach ($siteRoutes as $siteRoute => $siteRouteFolder) {
-    get($siteRoute, function($sitePath) use ($siteRouteFolder) {
+    Router::get($siteRoute, function($sitePath) use ($siteRouteFolder) {
         $siteFolder = $siteRouteFolder;
         include_once 'sites/templates/site.php';
     });
 }
 
-get('/', function() {
+Router::get('/', function() {
     header('Location: /home');
 });
 
-any('/404',function() {
+Router::any('/404',function() {
     header('Location: /site/404.php');
 });
