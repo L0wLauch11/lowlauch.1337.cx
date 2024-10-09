@@ -1,7 +1,7 @@
 <?php
 
-require_once __DIR__.'/Router.class.php';
-include_once __DIR__.'/setup.php';
+require_once 'Router.class.php';
+require_once 'setup.php';
 
 $siteRoutes = [
     '/$sitePath' => '', /* Wildcard sites */
