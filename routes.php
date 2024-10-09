@@ -11,8 +11,7 @@ $siteRoutes = [
 ];
 
 foreach ($siteRoutes as $siteRoute => $siteRouteFolder) {
-    get($siteRoute, function($sitePath) {
-        global $siteRouteFolder; // Maybe there's a better way to pass $siteRouteFolder to this function
+    get($siteRoute, function($sitePath) use ($siteRouteFolder) {
         $siteFolder = $siteRouteFolder;
         include_once 'sites/templates/site.php';
     });
