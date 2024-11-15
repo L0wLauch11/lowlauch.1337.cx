@@ -4,7 +4,7 @@
         include_once 'NavigationSection.class.php';
 
         $sections = [
-            new NavigationSection('', '/sites/home.php', 'Über Mich'),
+            new NavigationSection('/home', '/sites/home.php', 'Über Mich'),
             new NavigationSection('/game', '/sites/projects/games', 'Games'),
             new NavigationSection('/website', '/sites/projects/websites', 'Websites'),
             new NavigationSection('/computer', '/sites/projects/computers', 'Computer'),
@@ -12,7 +12,7 @@
 
         function printSite($siteRoute, $siteUrl, $siteName, $siteContent) {
             $isCurrentClass = '';
-            if (isset($sitePath) && $sitePath == $siteUrl) {
+            if ($siteUrl == $_SERVER['REQUEST_URI']) {
                 $isCurrentClass = 'side-navigation-current';
             }
 
@@ -23,14 +23,9 @@
                 $siteBrief = '';
             }
 
-            $siteBasename = explode(
-                '.php', 
-                basename(urldecode($siteUrl))
-            )[0];
-
             echo <<<HTML
                 <li>
-                    <a class="$isCurrentClass button" href="$siteRoute/$siteBasename">
+                    <a class="$isCurrentClass button" href="$siteUrl">
                         $siteName <span class="site-brief">$siteBrief</span>
                     </a>
                 </li>
@@ -56,7 +51,7 @@
                     include $sectionPath;
                     ob_end_clean();
 
-                    $siteUrl = urlencode($sectionPath);
+                    $siteUrl = "{$section->getRoute()}/";
                     $siteName = $site->getName();
                     $siteContent = renderPhp($sectionPath);
 
@@ -73,7 +68,9 @@
                         include "$sectionPath/$file";
                         ob_end_clean();
 
-                        $siteUrl = urlencode("$sectionPath/$file");
+                        $filenameNoExtension = explode('.php', $file)[0];
+
+                        $siteUrl = "{$section->getRoute()}/$filenameNoExtension";
                         $siteName = $site->getName();
                         $siteContent = renderPhp("$sectionPath/$file");
 

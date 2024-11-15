@@ -1,19 +1,19 @@
 <?php
 
 class Technology {
-    public string $identifier;
-    public string $icon;
-    public string $displayName;
-    public string $link;
-    public string $category;
+    private string $identifier;
+    private string $icon;
+    private string $displayName;
+    private string $link;
+    private string $category;
     private static array $technologies = [];
 
     public function __construct($identifier, $displayName, $link, $category = '', $icon = 'automatic') {
         $this->identifier = $identifier;
-        $this->icon = $icon;
         $this->displayName = $displayName;
         $this->link = $link;
         $this->category = $category;
+        $this->icon = ($icon == 'automatic') ? faviconGet($link) : $icon;
     }
 
     public static function add($identifier, $displayName, $link, $category, $icon = 'automatic'): void {
@@ -23,10 +23,6 @@ class Technology {
 
     public static function render($identifier): string {
         $technology = self::$technologies[$identifier];
-
-        if ($technology->icon == 'automatic') {
-            $technology->icon = faviconGet($technology->link);
-        }
 
         return <<<HTML
             <div class="technology">

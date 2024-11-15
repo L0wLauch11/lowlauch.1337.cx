@@ -16,3 +16,4 @@ Technology::add('github', 'GitHub', 'https://github.com/', 'Source Control');
 Technology::add('mysql', 'MySQL', 'https://www.mysql.com/de/', 'Database');
 Technology::add('java', 'Java', 'https://www.java.com/de/', 'Programming');
 Technology::add('spigot', 'SpigotMC', 'https://www.spigotmc.org/', 'Minecraft Plugins');
+Technology::add('laravel', 'Laravel', 'https://laravel.com/', 'Programming');

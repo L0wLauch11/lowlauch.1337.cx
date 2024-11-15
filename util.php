@@ -27,7 +27,7 @@ function faviconGet($faviconUrl): string {
 
     // Download icon first
     if (!file_exists($_SERVER['DOCUMENT_ROOT'].$iconPath)) {
-        $faviconUrl = "http://www.google.com/s2/favicons?domain=$linkEncoded";
+        $faviconUrl = "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=$linkEncoded&size=16";
         file_put_contents($_SERVER['DOCUMENT_ROOT'].$iconPath, file_get_contents($faviconUrl));
     }
 
