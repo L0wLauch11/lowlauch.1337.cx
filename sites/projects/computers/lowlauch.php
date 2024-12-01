@@ -20,7 +20,7 @@ $screenshotsBox->setScreenshots(['/asset/img/computers/lowlauch/'])
     new ComputerComponent('Pure Base 500', 'be quiet!', 'https://geizhals.at/be-quiet-pure-base-500-weiss-bg035-a2126910.html'),
     new ComputerComponent('970 EVO Plus 2TB', 'Samsung', 'https://geizhals.at/samsung-ssd-970-evo-plus-2tb-mz-v7s2t0bw-a1972736.html'),
     new ComputerComponent('Focus GX 750W', 'Seasonic', 'https://geizhals.at/seasonic-focus-gx-750w-atx-2-4-focus-gx-750-a2119986.html'),
-    new ComputerComponent('ROG STRIX B550-F Gaming (WI-FI)', 'Asus', 'https://geizhals.at/asus-rog-strix-b550-f-gaming-wi-fi-a2295392.html'),
+    new ComputerComponent('PRO Z690-A DDR4', 'MSI', 'https://geizhals.at/msi-pro-z690-a-ddr4-a2625664.html'),
 ))->renderComputerComponents();
 ?>
 
