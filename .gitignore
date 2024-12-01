@@ -3,3 +3,7 @@
 # Favicons get downloaded dynamically
 asset/img/icons/favicons/*
 !favicons/.gitkeep
+
+# Private articles for close friends only
+sites/private/*
+asset/img/private/*

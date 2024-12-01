@@ -8,6 +8,7 @@ $siteRoutes = [
     '/game/$sitePath' => 'projects/games/',
     '/website/$sitePath' => 'projects/websites/',
     '/computer/$sitePath' => 'projects/computers/',
+    '/private/$sitePath' => 'private/',
 ];
 
 foreach ($siteRoutes as $siteRoute => $siteRouteFolder) {
