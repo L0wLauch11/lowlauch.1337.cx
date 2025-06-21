@@ -80,7 +80,7 @@ ob_end_clean();
 
         <p class="credits-text">
             <span class="desktop-only">
-                <i>lowlauch, 2024</i> -> <a href="https://github.com/L0wLauch11/lowlauch.1337.cx" target="_blank">source code</a>
+                <i>lowlauch, <?= date('Y') ?></i> -> <a href="https://github.com/L0wLauch11/lowlauch.1337.cx" target="_blank">source code</a>
             </span>
 
             <span class="mobile-only">
