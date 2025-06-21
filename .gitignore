@@ -1,5 +1,8 @@
 .vscode/
 
+# Please visit their respective github repos if you wan't to see the code for them
+archived/websites
+
 # Favicons get downloaded dynamically
 asset/img/icons/favicons/*
 !favicons/.gitkeep

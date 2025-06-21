@@ -17,3 +17,5 @@ Technology::add('mysql', 'MySQL', 'https://www.mysql.com/de/', 'Database');
 Technology::add('java', 'Java', 'https://www.java.com/de/', 'Programming');
 Technology::add('spigot', 'SpigotMC', 'https://www.spigotmc.org/', 'Minecraft Plugins');
 Technology::add('laravel', 'Laravel', 'https://laravel.com/', 'Programming');
+Technology::add('bitwig', 'Bitwig Studio', 'https://www.bitwig.com/', 'Music');
+Technology::add('procreate', 'Procreate', 'https://procreate.com/', 'Art');
