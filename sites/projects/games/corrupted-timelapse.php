@@ -31,7 +31,7 @@ $site->setFooterContent($visit->render());
 <h3>Musik</h3>
 <p>Der Soundtrack wurde von meinem Freund Paul in Bosca Ceoil gemacht. Mittlerweile verwendet er Ableton Live.</p>
 
-<h3>Art</h3>
+<h3>Grafiken</h3>
 <p>Mein Bruder und Ich haben die Grafiken für dieses Spiel designed. Wie man sehen kann, haben wir uns mit den zahlreichen Effekten von Paint.NET gespielt.</p>
 
 <p>

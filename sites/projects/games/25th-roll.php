@@ -26,7 +26,7 @@ $site->setFooterContent($visit->render());
 
 <p>Der Game-Jam hat auch einige Preisgelder, also hoffe ich, dass ich einen Preis mitnehmen werde :)</p>
 
-<h3>Art</h3>
+<h3>Grafiken</h3>
 <p>
     Das Boss Sprite wurde von der Freundin meines Bruders entworfen.
 </p>
