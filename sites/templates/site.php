@@ -79,15 +79,12 @@ ob_end_clean();
         <?= $site->getFooterContent(); ?>
 
         <p class="credits-text">
-            <span class="desktop-only">
-                <i>lowlauch, <?= date('Y') ?></i> -> <a href="https://github.com/L0wLauch11/lowlauch.1337.cx" target="_blank">source code</a>
-            </span>
-
-            <span class="mobile-only">
-                <a class="button button-icon button-inline button-aqua" href="https://github.com/L0wLauch11/lowlauch.1337.cx" target="_blank">
-                    <img class="icon" src="/asset/img/icons/source.png" alt="">
-                </a>
-            </span>
+            <a style="text-decoration: none;" target="_blank" href="https://github.com/L0wLauch11/lowlauch.1337.cx">
+                <img style="width: 20px; margin-top: -4px;" class="icon" src="/asset/img/icons/github-mark-white.png">
+                <span class="desktop-only">
+                    lowlauch, <?= date('Y') ?>
+                </span>
+            </a>
         </p>
     </div>
 </body>
