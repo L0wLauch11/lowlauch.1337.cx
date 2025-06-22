@@ -13,4 +13,5 @@
 <link rel="stylesheet" href="/asset/css/ui-components/screenshots.css">
 <link rel="stylesheet" href="/asset/css/ui-components/technology.css">
 <link rel="stylesheet" href="/asset/css/ui-components/subtext.css">
+<link rel="stylesheet" href="/asset/css/ui-components/visit-link.css">
 <link rel="stylesheet" href="/asset/css/mobile.css">

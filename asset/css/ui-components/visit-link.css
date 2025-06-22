@@ -1,0 +1,9 @@
+.visit-link {
+    padding: 2px 4px;
+    text-decoration: none;
+}
+
+.visit-link img {
+    margin-top: -2px;
+    width: auto;
+}

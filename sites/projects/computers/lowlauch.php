@@ -9,7 +9,7 @@ $screenshotsBox->setScreenshots(['/asset/img/computers/lowlauch/'])
 
 <h2>Kurzbeschreibung</h2>
 <p>
-    Mein Computer :). <span class="brief">Ein ~<b>1600€</b> PC für 1080p Gaming (evtl. Später auf 1440p upgraden). Wurde während der GPU-Krise gekauft, daher war die GPU überdimensioniert teuer (~50% teurer als nach der Knappheit).</span>
+    Mein Computer :). <span class="brief">Ein ~<b>1600€</b> PC für 1080p Gaming. Mittlerweile habe ich auf 1440p geupgradet. Der PC wurde während der GPU-Krise gekauft, daher war die GPU überdimensioniert teuer (~50% teurer als nach der Knappheit).</span>
 </p>
 
 <h2>Komponente</h2>

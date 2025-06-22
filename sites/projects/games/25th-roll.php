@@ -7,7 +7,7 @@ $screenshotsBox = new ScreenshotsBox();
 $screenshotsBox->setScreenshots(['/asset/img/projects/25th-roll/']);
 $screenshotsBox->setMaxScreenshotsPerRow(3);
 
-$visit = new FooterVisitLink('https://gx.games/games/g05pfa/25th-roll/', '<b>' . $site->getName() . '</b> auf gx.games', 'aqua');
+$visit = new FooterVisitLink('https://gx.games/games/g05pfa/25th-roll/', $site->getName(), 'aqua');
 $site->setFooterContent($visit->render());
 ?>
 
@@ -21,7 +21,7 @@ $site->setFooterContent($visit->render());
 <h2>Beschreibung</h2>
 
 <p>
-    25th Roll <span class="brief">ist ein Strategiespiel, in dem du mit zufällig generierten Attacken einen Boss besiegen musst.</span> Dieses Spiel habe ich für den <?= faviconLink('https://gx.games/events/viral-glitch/', 'Viral Glitch Jam') ?> entwickelt. (Game-Jam Thema= <strong>Predictably Unpredictable</strong>) Durch die Würfel-Mechanic sollte dieses Thema noch ein bisschen besser getroffen werden.
+    25th Roll <span class="brief">ist ein Strategiespiel, in dem du mit zufällig generierten Attacken einen Boss besiegen musst.</span> Dieses Spiel habe ich für den <?= faviconLink('https://gx.games/events/viral-glitch/', 'Viral Glitch Jam') ?> entwickelt. (Game-Jam Thema= <strong>Predictably Unpredictable</strong>) Durch die Würfel-Mechanic sollte dieses Thema noch ein bisschen besser getroffen werden. Das ist das erste Spiel dieser Art, welches ich jemals fertiggebracht habe. Strategiespiele sind für mich schwierig zu designen, deswegen bin ich umso stolzer auf dieses Spiel spezifisch!
 </p>
 
 <p>Der Game-Jam hat auch einige Preisgelder, also hoffe ich, dass ich einen Preis mitnehmen werde :)</p>

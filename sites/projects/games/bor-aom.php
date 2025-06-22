@@ -1,13 +1,13 @@
 <?php
 $site = new Site();
 $site->setName('Bor Aom');
-$site->setReleaseDate('2023');
+$site->setReleaseDate('2023-2024');
 
 $screenshotsBox = new ScreenshotsBox();
 $screenshotsBox->setScreenshots(['/asset/img/projects/bor-aom/']);
 $screenshotsBox->setMaxScreenshotsPerRow(3);
 
-$visit = new FooterVisitLink('https://lowlauch.itch.io/bor-aom', $site->getName() . ' auf itch.io', 'red');
+$visit = new FooterVisitLink('https://lowlauch.itch.io/bor-aom', $site->getName(), 'red');
 $site->setFooterContent($visit->render());
 ?>
 

@@ -3,11 +3,11 @@ $site = new Site();
 $site->setName('Home');
 ?>
 
-<h2>Hallo</h2>
+<h2>Hallo in alle Himmelsrichtungen!!</h2>
 
 <h3>Über Mich</h3>
 <p>
-    Im Internet kennt man mich unter <strong>lowlauch</strong> und <span class="brief">dies ist meine persönliche Website</span> :D
+    Mein Name lautet Felix, im Internet kennt man mich unter <strong>lowlauch</strong> und <span class="brief">dies ist meine persönliche Website</span> :D
 </p>
 
 <h3>Meine Erfahrung</h3>

@@ -7,7 +7,7 @@ $screenshotsBox = new ScreenshotsBox();
 $screenshotsBox->setScreenshots(['/asset/img/projects/corrupted-timelapse/']);
 $screenshotsBox->setMaxScreenshotsPerRow(3);
 
-$visit = new FooterVisitLink('https://lowlauch.itch.io/corruptedtimelapse', $site->getName() . ' auf itch.io', 'red');
+$visit = new FooterVisitLink('https://lowlauch.itch.io/corruptedtimelapse', $site->getName(), 'red');
 $site->setFooterContent($visit->render());
 ?>
 

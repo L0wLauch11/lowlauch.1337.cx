@@ -7,7 +7,7 @@ $screenshotsBox = new ScreenshotsBox();
 $screenshotsBox->setScreenshots(['/asset/img/projects/hznor/']);
 $screenshotsBox->setMaxScreenshotsPerRow(3);
 
-$visit = new FooterVisitLink('https://lowlauch.itch.io/hznor', $site->getName() . ' auf itch.io', 'red');
+$visit = new FooterVisitLink('https://lowlauch.itch.io/hznor', $site->getName(), 'red');
 $site->setFooterContent($visit->render());
 ?>
 

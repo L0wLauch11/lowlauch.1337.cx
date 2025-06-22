@@ -7,7 +7,7 @@ $screenshotsBox = new ScreenshotsBox();
 $screenshotsBox->setScreenshots(['/asset/img/projects/after-dark/']);
 $screenshotsBox->setMaxScreenshotsPerRow(3);
 
-$visit = new FooterVisitLink('https://lowlauch.itch.io/after-dark', $site->getName() . ' auf itch.io', 'red');
+$visit = new FooterVisitLink('https://lowlauch.itch.io/after-dark', $site->getName(), 'red');
 $site->setFooterContent($visit->render());
 ?>
 

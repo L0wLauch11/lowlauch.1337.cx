@@ -1,9 +1,9 @@
 <?php
 $site = new Site();
 $site->setName('Minecraft Walo');
-$site->setReleaseDate('2020');
+$site->setReleaseDate('2020-2024');
 
-$visit = new FooterVisitLink('https://github.com/L0wLauch11/Walo', 'Walo auf Github', 'aqua');
+$visit = new FooterVisitLink('https://github.com/L0wLauch11/Walo', 'Walo', 'aqua');
 $site->setFooterContent($visit->render());
 ?>
 

@@ -6,6 +6,9 @@ $site->setReleaseDate('2018');
 $screenshotsBox = new ScreenshotsBox();
 $screenshotsBox->setScreenshots(['/asset/img/projects/oh-no/']);
 $screenshotsBox->setMaxScreenshotsPerRow(6); /* oh-no has phone screenshots */
+
+$visit = new FooterVisitLink('https://apkpure.com/oh-no/me.lowlauch.ohno', 'oh no! (Inoffiziell)', 'lime');
+$site->setFooterContent($visit->render());
 ?>
 
 <h2>Verwendete Technologien</h2>
