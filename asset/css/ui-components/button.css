@@ -44,9 +44,15 @@
 }
 
 /* Special colored buttons */
-.button-visit {
+.button-blue {
     outline-color: rgba(30, 143, 255, 0.6);
     background-color: rgba(30, 143, 255, 0.2);
+}
+
+.button-blue:hover {
+    outline-color: rgba(30, 143, 255, 1);
+    background-color: rgba(30, 143, 255, 0.3);
+    box-shadow: inset 0 -8px 24px rgba(114, 184, 255, 0.2);
 }
 
 .button-visit:hover {
