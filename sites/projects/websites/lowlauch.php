@@ -8,6 +8,7 @@ $site->setReleaseDate('2024');
 
 <h2>Verwendete Technologien</h2>
 <?= Technology::render('php'); ?>
+<?= Technology::render('js'); ?>
 <?= Technology::render('css'); ?>
 <?= Technology::render('github'); ?>
 
@@ -22,7 +23,7 @@ $site->setReleaseDate('2024');
 </p>
 
 <p>
-    Diese Website wurde mit Vanilla <?= faviconLink('https://www.php.net/manual/de/intro-whatis.php', 'PHP'); ?> geschrieben. Desweiteren wird für Styles stinknormales <?= faviconLink('https://developer.mozilla.org/en-US/docs/Web/CSS', 'CSS'); ?> verwendet.
+    Diese Website wurde mit Vanilla <?= faviconLink('https://www.php.net/manual/de/intro-whatis.php', 'PHP'); ?> geschrieben. Desweiteren wird für Styles stinknormales <?= faviconLink('https://developer.mozilla.org/en-US/docs/Web/CSS', 'CSS'); ?> verwendet. <?= faviconLink('https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'JavaScript'); ?> wird immer dann eingesetzt, wenn es Sinn macht (z. B. interaktiver Image-Viewer auf manchen Seiten).
 </p>
 
 <h3>CSS...</h3>

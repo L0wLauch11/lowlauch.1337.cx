@@ -19,3 +19,4 @@ Technology::add('spigot', 'SpigotMC', 'https://www.spigotmc.org/', 'Minecraft Pl
 Technology::add('laravel', 'Laravel', 'https://laravel.com/', 'Programming');
 Technology::add('bitwig', 'Bitwig Studio', 'https://www.bitwig.com/', 'Music');
 Technology::add('procreate', 'Procreate', 'https://procreate.com/', 'Art');
+Technology::add('js', 'JavaScript', 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', 'Programming');

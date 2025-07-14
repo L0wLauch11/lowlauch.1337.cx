@@ -3,7 +3,7 @@ $site = new Site();
 $site->setName('IPFS Free Archive');
 $site->setReleaseDate('2022');
 
-$visit = new FooterVisitLink('https://archive.lowlauch.1337.cx', 'archive.lowlauch.1337.cx', 'aqua');
+$visit = new FooterVisitLink('https://archive.lowlauch.1337.cx/', 'archive.lowlauch.1337.cx', 'aqua');
 $site->setFooterContent($visit->render());
 ?>
 

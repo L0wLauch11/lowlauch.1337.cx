@@ -1,6 +1,8 @@
 .visit-link {
     padding: 2px 4px;
     text-decoration: none;
+    margin-right: 8px;
+    border-radius: 4px;
 }
 
 .visit-link img {
